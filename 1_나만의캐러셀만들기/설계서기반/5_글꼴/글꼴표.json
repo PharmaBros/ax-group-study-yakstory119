@@ -1,0 +1,26 @@
+{
+  "_안내": "후보 글꼴 목록과, 6단계(글꼴 고르기)에서 클로드가 채우는 글꼴표. 지금은 '후보'만 있고 '제목글꼴'·'families'·'굵기'·'fonts'는 비어 있다 — 어떤 글꼴을 쓸지는 정하지 않았다. 6단계에서 근거 장과 후보를 겹쳐 보고 고른 뒤 아래 네 칸을 채운다(채우는 법: 1_공통설계서/설계하기.md 6절). 그림찍기.py·토큰만들기.py는 'fonts'·'제목글꼴'·'families'·'굵기'를 읽는다('후보'는 읽지 않는다). 'family'는 preview.html의 font-family에 적는 이름 그대로다. 값검사.py는 그 이름이 최종 json `글씨` 칸 글 안에 있는지 보는데, 'Pretendard'만은 '프리텐다드'로 바꿔 찾는다 — 그래서 json `글씨` 칸에는 각 후보의 'json에_적을_이름'을 적는다. 이 폴더의 글꼴은 모두 OFL(오픈 폰트 라이선스)이고 라이선스 문서가 함께 있다. 파일은 고치지 않고(이름·형식 바꾸기·잘라 줄이기 금지) 7_결과/디자인시스템화면/project/fonts/로 복사만 한다(라이선스 .txt·.pdf도 함께).",
+  "제목글꼴": "",
+  "families": {},
+  "굵기": {},
+  "fonts": [],
+  "_채우는_꼴": {
+    "제목글꼴": "제목에 쓰는 family 이름 하나(예: 후보의 family 값). 비워 두면 토큰만들기.py가 다른 이름을 넣으므로 꼭 채운다",
+    "families": "역할 → CSS 글꼴 줄. 예: {\"subtitle\": \"\\\"<family>\\\", sans-serif\", \"body\": \"\\\"<family>\\\", sans-serif\", \"small\": \"\\\"<family>\\\", sans-serif\"} — 보조 글꼴이 있으면 \"title-alt-1\"·\"body-alt-1\"처럼 더한다",
+    "굵기": "역할 → 숫자. 예: {\"title\": <굵기>, \"subtitle\": <굵기>, \"body\": <굵기>, \"small\": <굵기>}",
+    "fonts": "실제로 쓰는 글꼴 파일만, 굵기마다 한 줄: {\"family\": <family>, \"file\": <파일>, \"weight\": \"<굵기>\", \"역할\": <어디에 쓰는지>, \"라이선스\": <라이선스 파일>, \"고른_근거\": <근거 장·겹침 숫자>}"
+  },
+  "후보": [
+    {"family": "Pretendard", "json에_적을_이름": "프리텐다드", "파일": [{"file": "Pretendard-Regular.woff2", "weight": "400"}, {"file": "Pretendard-Bold.woff2", "weight": "700"}, {"file": "Pretendard-Black.woff2", "weight": "900"}], "꼴": "보통 고딕(곧고 반듯함)", "라이선스": "Pretendard_OFL.txt"},
+    {"family": "노토 산스 KR", "json에_적을_이름": "노토 산스 KR", "파일": [{"file": "NotoSansKR-wght.woff2", "weight": "100 900"}], "꼴": "보통 고딕 — 굵기를 100~900 사이 아무 값으로 바꿀 수 있는 가변 글꼴(같은 파일 하나). fonts에는 쓰는 굵기마다 한 줄씩 같은 파일로 적어도 된다", "라이선스": "NotoSansKR_OFL.txt"},
+    {"family": "지마켓 산스", "json에_적을_이름": "지마켓 산스", "파일": [{"file": "GmarketSansTTFMedium.ttf", "weight": "500"}, {"file": "GmarketSansTTFBold.ttf", "weight": "700"}], "꼴": "넓고 둥근 기운의 그래픽 제목 고딕", "라이선스": "GmarketSans_OFL.txt"},
+    {"family": "검은고딕", "json에_적을_이름": "검은고딕", "파일": [{"file": "BlackHanSans-Regular.ttf", "weight": "400"}], "꼴": "아주 굵고 좁은 제목 고딕(굵기 한 가지)", "라이선스": "BlackHanSans_OFL.txt"},
+    {"family": "도현", "json에_적을_이름": "도현", "파일": [{"file": "DoHyeon-Regular.ttf", "weight": "400"}], "꼴": "좁고 굵은 각진 고딕(굵기 한 가지)", "라이선스": "DoHyeon_OFL.txt"},
+    {"family": "나눔스퀘어라운드", "json에_적을_이름": "나눔스퀘어라운드", "파일": [{"file": "NanumSquareRoundR.ttf", "weight": "400"}, {"file": "NanumSquareRoundB.ttf", "weight": "700"}, {"file": "NanumSquareRoundEB.ttf", "weight": "800"}], "꼴": "획 끝이 둥근 네모꼴 고딕", "라이선스": "NanumSquareRound_OFL.txt"},
+    {"family": "카페24 써라운드 에어", "json에_적을_이름": "카페24 써라운드 에어", "파일": [{"file": "Cafe24SsurroundAir-v1.1.ttf", "weight": "400"}], "꼴": "둥글고 가는 손글씨풍 고딕", "라이선스": "Cafe24SsurroundAir_OFL.txt", "라이선스_파일": ["Cafe24SsurroundAir_OFL.txt", "Cafe24SsurroundAir_License.pdf"]},
+    {"family": "카페24 당당해", "json에_적을_이름": "카페24 당당해", "파일": [{"file": "Cafe24Dangdanghae-v2.0.woff2", "weight": "400"}], "꼴": "굵고 둥근 만화풍 제목", "라이선스": "Cafe24Dangdanghae_OFL.txt", "라이선스_파일": ["Cafe24Dangdanghae_OFL.txt", "Cafe24Dangdanghae_License.pdf"]},
+    {"family": "나눔명조", "json에_적을_이름": "나눔명조", "파일": [{"file": "NanumMyeongjo-Regular.ttf", "weight": "400"}, {"file": "NanumMyeongjo-Bold.ttf", "weight": "700"}, {"file": "NanumMyeongjo-ExtraBold.ttf", "weight": "800"}], "꼴": "명조(붓끝이 있는 세리프)", "라이선스": "NanumMyeongjo_OFL.txt"},
+    {"family": "싱글데이", "json에_적을_이름": "싱글데이", "파일": [{"file": "SingleDay-Regular.ttf", "weight": "400"}], "꼴": "동글동글한 손글씨", "라이선스": "SingleDay_OFL.txt"},
+    {"family": "연성", "json에_적을_이름": "연성", "파일": [{"file": "YeonSung-Regular.ttf", "weight": "400"}], "꼴": "붓으로 쓴 듯한 손글씨", "라이선스": "YeonSung_OFL.txt"}
+  ]
+}
