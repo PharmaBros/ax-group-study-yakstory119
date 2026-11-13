@@ -1,0 +1,6 @@
+# 키·설치물·캐시는 올리지 않는다
+.env
+.venv-cv/
+__pycache__/
+*.pyc
+.DS_Store

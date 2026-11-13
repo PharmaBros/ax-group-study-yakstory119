@@ -1,0 +1,12 @@
+강원교육모두체 (GangwonEduAll) Bold · Light
+
+- 저작권자: 강원특별자치도교육청 (제작 헤움디자인, 2020)
+- 공식 배포처: https://www.gwe.go.kr/main/content.do?key=m2307211207715 ("강원교육 서체 5종 다운로드 받기")
+- 이 폴더의 파일: 웹폰트판 GangwonEduAll-Bold.woff · GangwonEduAll-Light.woff
+  받은 곳: https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff, …/GangwonEdu_OTFLightA.woff (눈누 웹폰트, 2026-11-04, 이름만 바꿈)
+  공식 zip을 쓰지 않은 이유: 공식 MAC용 OTF는 크롬 글꼴 검사(OTS)에서 "CFF Name INDEX" 오류, Windows용 TTF는 "kern 표 오류"로 웹 화면에서 불러지지 않음(2026-11-04 헤드리스 크롬으로 확인). 웹폰트판은 두 굵기 모두 불러지고 한글이 그려짐.
+- 라이선스(공식 페이지 "강원교육서체 저작권 안내" 원문):
+  강원교육서체는 누구나 무료로 다운로드 받아 자유롭게 사용 가능합니다.(출처 표기 권장)
+  영상매체, 인쇄매체, 웹, 모바일 CI, BI, 판매용 저작물 등 다양한 매체에 자유롭게 사용이 가능하며, 특별한 허가절차 없이 사용할 수 있습니다.
+  다만, 강원교육 서체를 유료로 양도하거나 판매하는 등 상업적 행위는 금지하고 있습니다.
+- OFL 아님. 출처 표기 권장: "강원교육모두체 — 강원특별자치도교육청"
